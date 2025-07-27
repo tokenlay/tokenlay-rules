@@ -38,6 +38,9 @@
   ],
   "author": "Tokenlay",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "zod": "^3.23.8"
   },
