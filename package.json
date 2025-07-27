@@ -1,0 +1,65 @@
+{
+  "name": "@tokenlay/rules",
+  "version": "0.1.0",
+  "description": "Smart rule engine for AI usage routing and cost control logic",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest --coverage",
+    "lint": "eslint src tests --ext .ts",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "rules",
+    "engine",
+    "ai",
+    "routing",
+    "cost-control",
+    "rate-limiting",
+    "tokenlay"
+  ],
+  "author": "Tokenlay",
+  "license": "MIT",
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "@typescript-eslint/eslint-plugin": "^7.16.0",
+    "@typescript-eslint/parser": "^7.16.0",
+    "@vitest/coverage-v8": "^3.2.4",
+    "@vitest/ui": "^3.2.4",
+    "eslint": "^8.57.0",
+    "typescript": "^5.5.3",
+    "vitest": "^3.2.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tokenlay/tokenlay-rules.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tokenlay/tokenlay-rules/issues"
+  },
+  "homepage": "https://github.com/tokenlay/tokenlay-rules#readme"
+}
